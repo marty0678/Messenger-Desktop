@@ -4,9 +4,26 @@ A lightweight desktop wrapper for Facebook Messenger, built with [Quasar Framewo
 
 This project is provided as is with no warranty or guarantee of continued functionality. Facebook may change their website in ways that break this app at any time but seeing as it's just a simple web wrapper, it likely won't require any updates to keep working.
 
+## Installing
+
+Note that the provided release copies are built for Windows (x64) and macOS (M series) and are self signed as I made this app for myself, but sharing is caring and all that.
+
+Being self signed, it will cause warnings during installation on both platforms and you'll need allow the application to bypass the warnings if you trust it. If there are concerns, please feel free to build the app from source using the instructions below and/or audit the code (or just go to the Facebook Messenger website directly in your browser, which is what this app does).
+
+### Windows
+
+1. Download `messenger_desktop_setup_windows.exe` from the release page
+2. Run the installer and wait for installation to complete
+
+### macOS
+
+1. Download `messenger_desktop_mac.zip` from the release page
+2. Unzip the archive
+3. Drag `Messenger Desktop.app` to your Applications folder
+
 ## Contributing
 
-PRs are welcome but I don't intend to personally add any new features or do any maintenance on this project unless required, but I will likely merge any PRs that add value (and work).
+PRs are welcome but I don't intend to personally add any new features or do any maintenance on this project unless required, but I will likely merge any PRs that add value (and function).
 
 ## Prerequisites
 
