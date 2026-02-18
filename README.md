@@ -1,6 +1,6 @@
 # Messenger Desktop
 
-A lightweight desktop wrapper for Facebook Messenger, built with [Quasar Framework](https://quasar.dev/) and [Electron](https://www.electronjs.org/). Quickly built after Facebook announced killing the [Messenger](http://messenger.com/) web app and their desktop apps. Installing Facebook as a PWA causes it to always open to the home page of Facebook, so I wanted a quick way to get back to my chats directly from the desktop.
+A "lightweight" desktop wrapper for Facebook Messenger, built with [Quasar Framework](https://quasar.dev/) and [Electron](https://www.electronjs.org/). Quickly built after Facebook announced killing the [Messenger](http://messenger.com/) web app and their desktop apps. Installing Facebook as a PWA causes it to always open to the home page of Facebook, so I wanted a quick way to get back to my chats directly from the desktop.
 
 This project is provided as is with no warranty or guarantee of continued functionality. Facebook may change their website in ways that break this app at any time but seeing as it's just a simple web wrapper, it likely won't require any updates to keep working.
 
