@@ -1,7 +1,7 @@
 import { app, BrowserWindow, session } from 'electron'
 import path from 'node:path'
 import { platform, currentDir, appIcon, MESSENGER_URL, CHROME_USER_AGENT } from './config.js'
-import { loadWindowState, saveWindowState } from './state.js'
+import { loadWindowState, saveWindowState, trackNormalBounds } from './state.js'
 import { setupSecurity } from './security.js'
 import { setupMenus } from './menus.js'
 
@@ -32,6 +32,8 @@ async function createWindow() {
       ),
     },
   })
+
+  trackNormalBounds(mainWindow)
 
   if (state.maximized) {
     mainWindow.maximize()

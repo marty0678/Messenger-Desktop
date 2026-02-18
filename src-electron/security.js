@@ -35,7 +35,9 @@ export function setupSecurity(mainWindow) {
       return { action: 'allow' }
     }
     if (url.startsWith('https://')) {
-      shell.openExternal(url)
+      shell.openExternal(url).catch((err) => {
+        console.error(`Failed to open external URL (new-window): ${url}`, err)
+      })
     }
     return { action: 'deny' }
   })
@@ -44,7 +46,9 @@ export function setupSecurity(mainWindow) {
     if (!isTrustedURL(url)) {
       event.preventDefault()
       if (url.startsWith('https://')) {
-        shell.openExternal(url)
+        shell.openExternal(url).catch((err) => {
+          console.error(`Failed to open external URL (will-navigate): ${url}`, err)
+        })
       }
     }
   })

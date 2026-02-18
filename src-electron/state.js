@@ -29,9 +29,22 @@ export function loadWindowState() {
   }
 }
 
+let normalBounds = null
+
+export function trackNormalBounds(win) {
+  normalBounds = win.getBounds()
+  const update = () => {
+    if (!win.isMaximized()) {
+      normalBounds = win.getBounds()
+    }
+  }
+  win.on('resize', update)
+  win.on('move', update)
+}
+
 export function saveWindowState(win) {
   try {
-    const bounds = win.getBounds()
+    const bounds = win.isMaximized() && normalBounds ? normalBounds : win.getBounds()
     writeFileSync(
       stateFile,
       JSON.stringify({

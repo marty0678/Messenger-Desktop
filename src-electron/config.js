@@ -12,9 +12,10 @@ export const currentDir = fileURLToPath(new URL('.', import.meta.url))
 const iconFile =
   platform === 'win32' ? 'icon.ico' : platform === 'darwin' ? 'icon.icns' : 'icon.png'
 const iconPath = path.resolve(currentDir, 'icons', iconFile)
+const baseDir = process.env.QUASAR_PUBLIC_FOLDER || currentDir
 export const appIcon = existsSync(iconPath)
   ? iconPath
-  : path.resolve(process.env.QUASAR_PUBLIC_FOLDER, '../src-electron/icons', iconFile)
+  : path.resolve(baseDir, '../src-electron/icons', iconFile)
 
 export const MESSENGER_URL = 'https://www.facebook.com/messages/'
 
