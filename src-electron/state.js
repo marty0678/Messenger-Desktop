@@ -1,4 +1,4 @@
-import { app } from 'electron'
+import { app, screen } from 'electron'
 import path from 'node:path'
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 
@@ -23,6 +23,24 @@ export function loadWindowState() {
     if (!Number.isFinite(state.zoomLevel)) {
       state.zoomLevel = 0
     }
+    if (Number.isFinite(state.x) && Number.isFinite(state.y)) {
+      const visible = screen.getAllDisplays().some((display) => {
+        const { x, y, width, height } = display.bounds
+        return (
+          state.x < x + width &&
+          state.x + state.width > x &&
+          state.y < y + height &&
+          state.y + state.height > y
+        )
+      })
+      if (!visible) {
+        delete state.x
+        delete state.y
+      }
+    } else {
+      delete state.x
+      delete state.y
+    }
     return state
   } catch {
     return DEFAULT_STATE
@@ -40,6 +58,10 @@ export function trackNormalBounds(win) {
   }
   win.on('resize', update)
   win.on('move', update)
+  win.once('closed', () => {
+    win.removeListener('resize', update)
+    win.removeListener('move', update)
+  })
 }
 
 export function saveWindowState(win) {

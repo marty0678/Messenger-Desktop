@@ -61,7 +61,10 @@ async function createWindow() {
   })
 }
 
-app.whenReady().then(createWindow)
+app
+  .whenReady()
+  .then(createWindow)
+  .catch((err) => console.error('Failed to create window:', err))
 
 app.on('window-all-closed', () => {
   if (platform !== 'darwin') {
@@ -71,6 +74,6 @@ app.on('window-all-closed', () => {
 
 app.on('activate', () => {
   if (mainWindow === null) {
-    createWindow()
+    createWindow().catch((err) => console.error('Failed to create window:', err))
   }
 })
