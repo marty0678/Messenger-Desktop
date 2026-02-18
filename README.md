@@ -10,6 +10,8 @@ Note that the provided release copies are built for Windows (x64) and macOS (M s
 
 Being self signed, it will cause warnings during installation on both platforms and you'll need allow the application to bypass the warnings if you trust it. If there are concerns, please feel free to build the app from source using the instructions below and/or audit the code (or just go to the Facebook Messenger website directly in your browser, which is what this app does).
 
+Release copies are available on the [releases page](https://github.com/marty0678/Messenger-Desktop/releases).
+
 ### Windows
 
 1. Download `messenger_desktop_setup_windows.exe` from the release page
