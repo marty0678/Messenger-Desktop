@@ -29,7 +29,7 @@ PRs are welcome but I don't intend to personally add any new features or do any 
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v24+ (see `.nvmrc` for the recommended version)
+- [Node.js](https://nodejs.org/) v24+
 - [pnpm](https://pnpm.io/) v10+
 
 ## Install
@@ -50,7 +50,7 @@ quasar dev -m electron
 
 ## Build
 
-Build the production Electron app (Windows installer by default):
+Build the production Electron app (will build based on your current platform):
 
 ```bash
 pnpm build
