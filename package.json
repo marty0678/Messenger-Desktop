@@ -1,6 +1,6 @@
 {
   "name": "messenger-desktop",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A wrapper for the Facebook Messenger site that is going away",
   "productName": "Messenger Desktop",
   "author": "Marty Cochrane <49799843+marty0678@users.noreply.github.com>",
