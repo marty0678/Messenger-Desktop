@@ -23,6 +23,11 @@ Release copies are available on the [releases page](https://github.com/marty0678
 2. Unzip the archive
 3. Drag `Messenger Desktop.app` to your Applications folder
 
+### Linux
+
+1. Download messenger_desktop_linux.AppImage from the release page
+2. Right-click and go to Properties > Permissions and enable "Allow executing file as program
+
 ## Contributing
 
 PRs are welcome but I don't intend to personally add any new features or do any maintenance on this project unless required, but I will likely merge any PRs that add value (and function).
