@@ -186,6 +186,10 @@ export default defineConfig((/* ctx */) => {
         mac: {
           target: 'dmg',
           category: 'public.app-category.social-networking'
+        },
+
+        linux: {
+          target: 'AppImage'
         }
       }
     },
