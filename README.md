@@ -26,7 +26,7 @@ Release copies are available on the [releases page](https://github.com/marty0678
 ### Linux
 
 1. Download messenger_desktop_linux.AppImage from the release page
-2. Right-click and go to Properties > Permissions and enable "Allow executing file as program
+2. Right-click and go to Properties > Permissions and enable "Allow executing file as program"
 
 ## Contributing
 
