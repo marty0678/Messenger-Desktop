@@ -19,9 +19,8 @@ Release copies are available on the [releases page](https://github.com/marty0678
 
 ### macOS
 
-1. Download `messenger_desktop_mac.zip` from the release page
-2. Unzip the archive
-3. Drag `Messenger Desktop.app` to your Applications folder
+1. Download `messenger_desktop_mac.dmg` from the release page
+2. Open the DMG and drag `Messenger Desktop.app` to your Applications folder
 
 ### Linux
 
