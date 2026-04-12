@@ -6,7 +6,7 @@ This project is provided as is with no warranty or guarantee of continued functi
 
 ## Installing
 
-Note that the provided release copies are built for Windows (x64) and macOS (M series) and are self signed as I made this app for myself, but sharing is caring and all that.
+Note that the provided release copies are built for Windows (x64) and macOS (Universal - Intel & Apple Silicon) and are self signed as I made this app for myself, but sharing is caring and all that.
 
 Being self signed, it will cause warnings during installation on both platforms and you'll need allow the application to bypass the warnings if you trust it. If there are concerns, please feel free to build the app from source using the instructions below and/or audit the code (or just go to the Facebook Messenger website directly in your browser, which is what this app does).
 
